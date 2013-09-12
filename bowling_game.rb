@@ -5,4 +5,11 @@ attr_accessor :rolls
 		@rolls = []
 	end
 
+	def roll(pins)
+	end
+
+	def score
+		0
+	end
+
 end
