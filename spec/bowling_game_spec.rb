@@ -10,6 +10,7 @@ describe BowlingGame do
       game = BowlingGame.new
 
       expect(game.rolls).to eq([]) 
+      
     end
   end
 end
