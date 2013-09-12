@@ -10,7 +10,7 @@ attr_accessor :rolls
 	end
 
 	def score
-		@rolls.reduce(:*)
+		@rolls.reduce(:+)
 	end
 
 end
