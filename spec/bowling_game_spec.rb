@@ -43,6 +43,18 @@ describe BowlingGame do
   		end
   	end
 
+  	context 'when a strike is thrown' do
+  		it 'records frame score as 10 plus total num pins knocked down in next two rolls' do
+  			game.roll(10)
+  			game.roll(7)
+  			game.roll(1)
+				16.times { game.roll(0) }
+
+				expect(game.score).to eq(26)
+  		end
+  	end
+
+
 
   	
   	#using context instead
