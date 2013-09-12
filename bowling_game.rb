@@ -6,10 +6,11 @@ attr_accessor :rolls
 	end
 
 	def roll(pins)
+		@rolls.push(pins)
 	end
 
 	def score
-		0
+		@rolls.reduce(:*)
 	end
 
 end
